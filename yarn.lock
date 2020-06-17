@@ -9782,15 +9782,6 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-"sensedia-ui-kit@git+ssh://git@bitbucket.org:sensedia/sensedia-ui-kit.git":
-  version "1.0.0"
-  resolved "git+ssh://git@bitbucket.org:sensedia/sensedia-ui-kit.git#16375510da43482a74ed9ef20feaa5933a608a31"
-  dependencies:
-    "@tippy.js/react" "^3.1.1"
-    moment "^2.24.0"
-    moment-timezone "^0.5.27"
-    react-perfect-scrollbar "^1.5.3"
-
 serialize-javascript@^1.4.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.9.1.tgz#cfc200aef77b600c47da9bb8149c943e798c2fdb"

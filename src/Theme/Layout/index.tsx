@@ -1,8 +1,8 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
 import { DashboardWrapper, ContentWrapper, Sticky } from './styles'
-import { Nav } from './Nav'
-import Content from './Content'
-import { Sidebar } from './Sidebar'
+import { Nav } from './Components/Nav'
+import Content from './Components/Content'
+import { Sidebar } from './Components/Sidebar'
 import { history } from '../../Store'
 import { ScrollPretty } from '../../Components/ScrollPretty'
 

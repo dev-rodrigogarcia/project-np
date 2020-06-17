@@ -15,12 +15,12 @@ export const DashboardWrapper = styled.div`
 `
 
 export const ContentWrapper = styled.div<Translate>`
-   width: ${({ open }) => (open ? css`calc(100% - 220px)` : '100%')};
+   width: ${({ open }) => (open ? css`calc(100% - 230px)` : '100%')};
    height: 100%;
    background-color: ${({ theme }) => theme.colors.layerBase};
    overflow: hidden;
    float: left;
-   left: ${({ open }) => (open ? '220px' : '0px')};
+   left: ${({ open }) => (open ? '230px' : '0px')};
    position: relative;
    transition: all 0.5s ease-in-out;
    display: flex;
@@ -37,7 +37,7 @@ export const ContentWrapper = styled.div<Translate>`
       ${({ open }) =>
       open &&
       css`
-         transform: translate(220px, 0);
+         transform: translate(230px, 0);
       `}
    }
 `

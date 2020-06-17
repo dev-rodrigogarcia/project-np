@@ -8,7 +8,9 @@ const PrivateRoute = ({ components: Components, ...rest }: any) => (
       render={props => (
          <Layout
             components={{
+               // eslint-disable-next-line react/jsx-pascal-case
                top: <Components.top {...props} />,
+               // eslint-disable-next-line react/jsx-pascal-case
                content: <Components.content {...props} />,
             }}
          />

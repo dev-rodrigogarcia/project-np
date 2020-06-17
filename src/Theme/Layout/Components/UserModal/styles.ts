@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Box } from '../../../Components/Grid'
+import { Box } from '../../../../Components/Grid'
 
 export const UserImg = styled.img`
    width: 40px;

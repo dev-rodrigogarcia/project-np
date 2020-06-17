@@ -1,8 +1,8 @@
 import React from 'react'
-import { Icon } from 'sensedia-ui-kit'
+import { Icon } from '../../../../../Components/Icon'
 import { StyledBreadCrumb } from './styles'
 
-const { Container, UL, LI, Link, LinkPage } = StyledBreadCrumb
+const { Container, UL, LI, LinkPage } = StyledBreadCrumb
 
 const Breadcrumb: React.FunctionComponent = () => {
    return (
@@ -10,13 +10,14 @@ const Breadcrumb: React.FunctionComponent = () => {
          <UL>
             <LinkPage>
                {' '}
-               <em className="fas fa-apple-alt fa-2x" />&nbsp;&nbsp;Rótulos
+               <em className="fas fa-apple-alt fa-2x" />
+               &nbsp;&nbsp;Rótulos
             </LinkPage>
             <LI>
                {' '}
-               <Icon name="arrow" />{' '}
+               <Icon name="edit" />{' '}
             </LI>
-            <Link >Rótulo Overview</Link>
+            {/* <Link >Rótulo Overview</Link> */}
          </UL>
       </Container>
    )

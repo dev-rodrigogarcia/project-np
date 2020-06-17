@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { ContainerSidebar, Logo, LinkItemStyle, Text } from './styles'
+import { Name, Icon } from '../Icon'
 
 interface SidebarProps {
    open: boolean
@@ -12,7 +13,7 @@ interface SidebarProps {
 
 interface LinkItemProps {
    to: string
-   icon: string
+   icon: Name
    text: string
    /*
     * NavLink React Router Dom
@@ -30,8 +31,7 @@ const LinkItem: React.FunctionComponent<LinkItemProps> = ({
       <LinkItemStyle>
          <Component to={to} activeClassName="active" data-testid={to}>
             <Text>
-               <em className={`fas ${icon}`} />
-               &nbsp;&nbsp;
+               <Icon name={icon} />
                {text}
             </Text>
          </Component>

@@ -42,7 +42,6 @@
     "react-router-dom": "~5.0.1",
     "redux": "^4.0.4",
     "redux-async-state": "0.0.5",
-    "sensedia-ui-kit": "git+ssh://git@bitbucket.org:sensedia/sensedia-ui-kit.git",
     "styled-components": "^5.0.0",
     "tippy.js": "^5.1.0"
   },

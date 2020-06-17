@@ -1,6 +1,5 @@
 import styled, { css, keyframes } from 'styled-components'
 import linkBefore from '../../assets/img/link-radius-top.svg'
-import { scrollBar } from '../../Theme/scrollBar/scrollBar'
 
 interface Sidebar extends React.HtmlHTMLAttributes<HTMLDivElement> {
    open: boolean
@@ -36,8 +35,8 @@ const rotateAfter = keyframes`
 
 export const ContainerSidebar = styled.div<Sidebar>`
    position: fixed;
-   width: 220px;
-   margin-left: ${({ open }) => (!open ? '-220px' : '0')};
+   width: 230px;
+   margin-left: ${({ open }) => (!open ? '-230px' : '0')};
    height: 100%;
    background: ${({ theme }) => theme.colors.gradient};
    transition: all 0.5s ease-in-out;
@@ -62,11 +61,11 @@ export const ContainerSidebar = styled.div<Sidebar>`
    }
 
    @media (max-width: 991px) {
-      width: 220px;
-      margin-left: -220px;
+      width: 230px;
+      margin-left: -230px;
       ${({ open }) => open &&
       css`
-            transform: translate(220px, 0);
+            transform: translate(230px, 0);
          `}
    }
 `
@@ -96,8 +95,10 @@ export const Text = styled.span`
    display: flex;
    align-items: center;
 
-   em {
-      font-size: 18px;
+   svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
    }
 `
 
@@ -116,12 +117,24 @@ export const LinkItemStyle = styled.li`
       transition: all 0.2s ease-in-out;
       letter-spacing: 1px;
       position: relative;
+      height: 50px;
+
+      svg {
+         fill: ${({ theme }) => theme.colors.white};
+      }
 
       &:hover {
          background-color: rgba(255, 255, 255, 0.35);
          color: ${({ theme }) => theme.colors.grayDark};
          text-decoration: none;
          border-radius: 30px 0 0 30px;
+
+         svg {
+            width: 22px;
+            height: 22px;
+            margin-right: 8px;
+            fill: ${({ theme }) => theme.colors.grayDark};
+         }
       }
 
       &.active {
@@ -131,8 +144,8 @@ export const LinkItemStyle = styled.li`
          border-radius: 30px 0 0 30px;
          width: 210px;
 
-         em {
-            color: ${({ theme }) => theme.colors.primary};
+         svg {
+            fill: ${({ theme }) => theme.colors.primary};
          }
 
          &:before {
@@ -146,7 +159,7 @@ export const LinkItemStyle = styled.li`
             background-repeat: no-repeat;
             position: absolute;
             top: 0;
-            right: 10px;
+            right: 0px;
             animation: ${rotateBefore} 0.5s linear;
          }
 
@@ -160,7 +173,7 @@ export const LinkItemStyle = styled.li`
             background-image: url(${linkBefore});
             position: absolute;
             bottom: 0;
-            right: 10px;
+            right: 0px;
             animation: ${rotateAfter} 0.5s linear;
          }
       }

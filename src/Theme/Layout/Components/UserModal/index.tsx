@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from 'react'
-import { Modal } from '../../../Components/Modal'
-import { Box } from '../../../Components/Grid'
+import { Modal } from '../../../../Components/Modal'
+import { Box } from '../../../../Components/Grid'
 
 import { UserImg, ContainerInformation, Avatar, Information } from './styles'
 import { HelpOption } from '../ModalHelp'
-import { Divider } from '../../../Components/Sidebar/styles'
+import { Divider } from '../../../../Components/Sidebar/styles'
 
 interface UserProps {
    userPhoto: string

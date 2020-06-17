@@ -1,8 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import { NavBar, NavFirst, NavSecond, Separator } from '../NavBar'
-import { IconButton } from '../../../Components/IconButton'
+import { IconButton } from '../../../../Components/IconButton'
 import { ModalUser } from './UserInfo'
 import { HelpModal } from './Help'
+import { ModalApps } from './Apps'
 
 interface SidebarProps {
    open: boolean
@@ -22,6 +23,7 @@ const Nav: FunctionComponent<SidebarProps> = ({ open, setOpen }) => {
          </NavFirst>
          <NavSecond>
             <HelpModal />
+            <ModalApps />
             <Separator />
             <ModalUser />
          </NavSecond>
